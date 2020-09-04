@@ -1,15 +1,3 @@
-// const mongoose = require('mongoose');
-// const { Schema, model } = mongoose;
-
-// const userSchema = new Schema({
-//   username: String,
-//   password: String
-// });
-
-// const User = mongoose.model('User', userSchema);
-
-// module.exports = User;
-
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt');
 const Schema = mongoose.Schema;

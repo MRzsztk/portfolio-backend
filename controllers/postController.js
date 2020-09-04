@@ -21,6 +21,7 @@ module.exports = {
     async store(req, res, next) {
         try {
             const { title, tags, content } = req.body;
+            console.log(title)
             const result = await BlogPost.create({ title: title, tags: tags, content: content })
             if (!result) {
                 return res.status(404).json({
