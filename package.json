@@ -1,12 +1,11 @@
 {
   "name": "myportfolio-backend",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./app.js",
     "dev": "DEBUG=myportfolio-backend:* nodemon ./app.js",
-    "dev-windows": "nodemon ./bin/www",
-    "build": "npm run vercel-build"
+    "dev-windows": "nodemon ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
