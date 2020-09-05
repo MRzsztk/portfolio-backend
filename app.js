@@ -7,6 +7,11 @@ const app = express();
 const routes = require('./routes');
 require('./auth/auth');
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 mongoose
   .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
   .then(x => {
