@@ -16,10 +16,11 @@ mongoose
     console.error('Error connecting to mongo', err)
   });
 
-app.use(cors({
-  credentials: true,
-  origin: ['https://portfolio-frontend-ten.vercel.app/']
-}));
+app.use(cors())
+//   ({
+//   credentials: true,
+//   origin: ['https://portfolio-frontend-ten.vercel.app/']
+// }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.json())
