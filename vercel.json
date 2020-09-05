@@ -1,6 +1,6 @@
 {
   "name": "mrzsztk-backend",
-  "version": 1,
+  "version": 2,
   "env": {
     "MONGODB_URI": "@portfoliodb-uri"
   }

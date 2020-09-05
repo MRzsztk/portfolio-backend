@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./app.js",
     "dev": "DEBUG=myportfolio-backend:* nodemon ./app.js",
-    "dev-windows": "nodemon ./bin/www"
+    "dev-windows": "nodemon ./bin/www",
+    "build": "npm run vercel-build"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
