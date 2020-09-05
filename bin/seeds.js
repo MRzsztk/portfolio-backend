@@ -8,7 +8,7 @@ const BlogPost = require('../models/BlogPost');
 const salt = bcrypt.genSaltSync();
 const hash = bcrypt.hashSync(process.env.PASSWD, salt);
 
-mongoose.connect('mongodb://localhost/myportfolio-backend', {
+mongoose.connect(process.env.MONGODB_URI, {
   useCreateIndex: true,
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -17,7 +17,7 @@ mongoose.connect('mongodb://localhost/myportfolio-backend', {
 
 const users = [
   {
-    username: 'MRzsztk',
+    username: 'admin',
     password: hash
   }
 ];

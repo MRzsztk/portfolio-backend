@@ -8,7 +8,7 @@ const routes = require('./routes');
 require('./auth/auth');
 
 mongoose
-  .connect('mongodb://localhost/myportfolio-backend', { useNewUrlParser: true })
+  .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -18,7 +18,7 @@ mongoose
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000']
+  origin: ['https://portfolio-frontend-ten.vercel.app/']
 }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

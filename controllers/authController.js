@@ -3,13 +3,6 @@ const jwt = require('jsonwebtoken');
 const jwtSecret = require('../jwtConfig')
 
 module.exports = {
-    // // Create new User account
-    // async store(req, res, next) {
-    //     res.json({
-    //         message: 'Signup successful',
-    //         user: req.user
-    //     });
-    // },
     async index(req, res, next) {
         passport.authenticate('login', async (err, user, info) => {
             try {

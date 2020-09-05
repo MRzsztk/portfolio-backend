@@ -27,7 +27,6 @@ module.exports = {
                     message: 'Error sending message.',
                 })
             }
-            // const message = await BlogPost.findOne({ _id: result._id })
             return res.status(200).json({ sent: 'Your message has been sent.'})
         } catch (error) {
             console.log(error)
