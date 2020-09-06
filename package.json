@@ -2,6 +2,7 @@
   "name": "myportfolio-backend",
   "version": "1.0.0",
   "private": true,
+  "main": "app.js",
   "scripts": {
     "start": "node ./app.js",
     "dev": "DEBUG=myportfolio-backend:* nodemon ./app.js",
